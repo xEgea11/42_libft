@@ -1,0 +1,11 @@
+#.DS_Store
+.DS_Store
+
+#*.o
+*.o
+
+#Binary
+libft.a
+
+#Others
+*.h.ghc
