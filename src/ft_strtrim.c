@@ -6,7 +6,7 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 17:12:08 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/09 18:49:55 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/10 18:07:57 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	end = ft_strlen(s1);
 	if (!s1 || !set)
-		return (0);
+		return (NULL);
 	while (ft_strchr(set, s1[start]) && s1[start])
 		start++;
 	while (ft_strchr(set, s1[end - 1]) && end > start)
 		end--;
 	dest = malloc(((end - start) + 1) * sizeof(char));
 	if (!dest)
-		return (0);
+		return (NULL);
 	ft_strlcpy(dest, &s1[start], (end - start) + 1);
 	return (dest);
 }

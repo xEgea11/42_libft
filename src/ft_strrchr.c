@@ -6,7 +6,7 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 17:12:03 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/09 18:49:52 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/10 18:05:14 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ char	*ft_strrchr(const char *s, int c)
 		len--;
 	if (s[len] == (char)c)
 		return ((char *)&s[len]);
-	return (0);
+	return (NULL);
 }
