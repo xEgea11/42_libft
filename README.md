@@ -9,7 +9,7 @@ El Makefile que viene adjunto permitirá compilar las funciones en una librería
 
 1- Clona el repositorio 
 
-```git clone git@github.com:xEgea11/42_libft.git```
+```git clone https://github.com/xEgea11/42_libft.git```
 
 2- Accede al repositorio 
 
