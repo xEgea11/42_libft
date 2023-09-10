@@ -5,7 +5,7 @@
 Este es el primer proyecto del cursus 42. En él, implementaremos funciones existentes en C, que usaremos posteriormente en los siguientes proyectos. 
 El Makefile que viene adjunto permitirá compilar las funciones en una librería que se podrá añadir a otros proyectos.
 
-### Uso
+## Uso
 
 1- Clona el repositorio 
 
