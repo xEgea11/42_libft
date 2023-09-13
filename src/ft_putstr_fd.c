@@ -6,11 +6,11 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 02:20:18 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/10 10:44:17 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/13 17:58:24 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

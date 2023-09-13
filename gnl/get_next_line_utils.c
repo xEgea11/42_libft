@@ -6,11 +6,11 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 21:05:05 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/09 18:50:11 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/13 18:21:57 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "get_next_line.h"
 
 size_t	ft_strlen(const char *s)
 {

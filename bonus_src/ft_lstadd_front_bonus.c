@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/26 03:45:38 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/09 18:48:38 by regea-go         ###   ########.fr       */
+/*   Created: 2023/04/26 03:44:19 by regea-go          #+#    #+#             */
+/*   Updated: 2023/09/13 17:55:53 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int		size;
-	t_list	*itr;
-
-	size = 0;
-	itr = lst;
-	if (lst == 0)
-		return (0);
-	while (itr != 0)
+	if (!new)
+		return ;
+	if (!lst)
 	{
-		itr = itr->next;
-		size++;
+		*lst = new;
+		return ;
 	}
-	return (size);
+	new->next = *lst;
+	*lst = new;
 }

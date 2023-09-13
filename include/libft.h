@@ -6,7 +6,7 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 11:24:50 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/10 09:11:29 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/13 18:20:54 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,28 +77,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
-// From GNL
-size_t	ft_strlen(const char *str);
-char	*copy_line(char *str);
-char	*get_next_line(int fd);
-char	*update_buffer(char	*buffer);
-char	*read_line(char *buffer, int fd);
-size_t	ft_linelen(char *str);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strjoin_gnl(char *buffer, char *aux);
-char	*ft_free(char **str);
-
-// From printf
-
-int		ft_printf(char const *fmt, ...);
-int		ft_putchar_fd_printf(char c, int fd);
-int		ft_putstr_fd_printf(char *s, int fd);
-int		ft_putnbr_fd_printf(int n, int fd);
-int		ft_putunbr_fd_printf(unsigned int n, int fd);
-size_t	ft_strlen_printf(const char *s);
-int		to_hex_printf(unsigned int i);
-int		to_hex_up_printf(unsigned int i);
-int		ptrhx_printf(unsigned long int i);
 
 #endif

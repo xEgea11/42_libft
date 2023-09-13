@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/26 03:44:19 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/09 18:48:16 by regea-go         ###   ########.fr       */
+/*   Created: 2023/09/13 18:20:09 by regea-go          #+#    #+#             */
+/*   Updated: 2023/09/13 18:21:40 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+# include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
-{
-	if (!new)
-		return ;
-	if (!lst)
-	{
-		*lst = new;
-		return ;
-	}
-	new->next = *lst;
-	*lst = new;
-}
+size_t	ft_strlen(const char *str);
+char	*copy_line(char *str);
+char	*get_next_line(int fd);
+char	*update_buffer(char	*buffer);
+char	*read_line(char *buffer, int fd);
+size_t	ft_linelen(char *str);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strjoin_gnl(char *buffer, char *aux);
+char	*ft_free(char **str);
+
+#endif

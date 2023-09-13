@@ -6,11 +6,11 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 17:06:00 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/10 09:00:01 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/13 17:54:39 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief Gets a number by a string and returns the number in a integer form

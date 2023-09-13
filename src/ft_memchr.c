@@ -6,11 +6,11 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 17:07:13 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/10 09:40:48 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/13 17:57:34 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 /**
  * @brief It locates the first occurrence of "c" (converted to unsigned char)

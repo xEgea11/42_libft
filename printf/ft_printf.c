@@ -6,11 +6,11 @@
 /*   By: regea-go <regea-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 15:46:43 by regea-go          #+#    #+#             */
-/*   Updated: 2023/09/09 18:49:00 by regea-go         ###   ########.fr       */
+/*   Updated: 2023/09/13 18:13:00 by regea-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "printf.h"
 
 static int	format(char const *fmt, va_list args, int i)
 {
