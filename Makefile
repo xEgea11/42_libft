@@ -1,6 +1,6 @@
 NAME = libft.a
 
-INCLUDES = -I ./include/
+INCLUDES = -I ./include/ 
 DOTH = libft.h 
 INCLUDE_DIR = include/
 INCLUDE_PATH = $(addprefix $(INCLUDE_DIR), $(DOTH))
@@ -52,46 +52,52 @@ BLUE = "\033[0;34m"
 
 
 $(NAME) : $(OBJS) $(GNL_SRC_OBJS) $(PRINTF_SRC_OBJS)
-	@echo $(GREEN) Compiling libft... $(RESET)
+	@echo $(GREEN) [*] Compiling libft... $(RESET)
+	@sleep 1
 	@ar rsc  $(NAME) $(OBJS) $(GNL_SRC_OBJS) $(PRINTF_SRC_OBJS)
-	@echo $(GREEN) Libft compiled! $(RESET)
+	@echo $(GREEN) [*] Libft compiled! $(RESET)
+	@sleep 1
 
 $(OBJ_DIR) : 
 	@mkdir -p $(OBJ_DIR)
-	@echo $(GREEN) Objects file created! $(RESET)
+	@echo $(GREEN) [*] Objects file of libft created! $(RESET)
+	@sleep 1
 
 $(BOBJ_DIR) :
 	@mkdir -p $(BOBJ_DIR)
-	@echo $(GREEN) Bonus objects file created! $(RESET)
+	@echo $(GREEN) [*] Bonus objects file from libft created! $(RESET)
+	@sleep 1
 
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c | $(OBJ_DIR) 
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
-	@echo $(YELLOW) Generating $@ ... $(RESET)
+	@echo $(YELLOW) [*] Generating $@ ... $(RESET)
 
 $(GNL_DIR)%.o : $(GNL_DIR)%.c 
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
-	@echo $(YELLOW) Generating $@ ... $(RESET)
+	@echo $(YELLOW) [*] Generating $@ ... $(RESET)
 
 $(PRINTF_DIR)%.o : $(PRINTF_DIR)%.c
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
-	@echo $(YELLOW) Generating $@ ... $(RESET)
+	@echo $(YELLOW) [*] Generating $@ ... $(RESET)
  
 $(BOBJ_DIR)%.o : $(BONUS_DIR)%.c | $(BOBJ_DIR) 
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
-	@echo $(YELLOW) Generating $@ ... $(RESET)
+	@echo $(YELLOW) [*] Generating $@ ... $(RESET)
 
 
 .PHONY: all clean fclean re bonus
 
 bonus: $(OBJS) $(GNL_SRC_OBJS) $(PRINTF_SRC_OBJS) $(BONUS_SRC_OBJS)
-	@echo $(GREEN) Compiling bonus... $(RESET)
+	@echo $(GREEN) [*] Compiling bonus of libft... $(RESET)
+	@sleep 1
 	@ar rsc	$(NAME) $(OBJS) $(GNL_SRC_OBJS) $(PRINTF_SRC_OBJS) $(BONUS_SRC_OBJS)
-	@echo $(GREEN) Bonus compiled! $(RESET) 
+	@echo $(GREEN) [*] Bonus of libft compiled! $(RESET) 
 
 all: $(NAME)
 
 clean:
-	@echo $(GREEN) Removing objects... $(RESET)
+	@echo $(GREEN) [*] Removing objects from libft... $(RESET)
+	@sleep 1
 	@rm -f $(OBJS) $(BONUS_SRC_OBJS) $(GNL_SRC_OBJS) $(PRINTF_SRC_OBJS)
 
 	@if [ -d "$(OBJ_DIR)" ]; then \
@@ -101,10 +107,12 @@ clean:
 	@if [ -d "$(BOBJ_DIR)" ]; then \
 		rm -rf "$(BOBJ_DIR)"; \
 	fi 
-	@echo $(GREEN) Objects removed! $(RESET)
+	@echo $(GREEN) [*] Objects from libft removed! $(RESET)
+	@sleep 1
 
 fclean: clean 
 	@rm -f $(NAME)
-	@echo $(GREEN) Binary removed! $(RESET)
+	@echo $(GREEN) [*] Library libft.a removed! $(RESET)
+	@sleep 1
 
 re: fclean all
