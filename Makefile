@@ -43,7 +43,7 @@ BONUS_SRC_OBJS = $(addprefix $(BOBJ_DIR), $(BONUS_OBJS))
 CFLAGS = -Wall -Wextra -Werror
 CC = gcc
 
-# Colores
+# Colors
 RESET = "\033[0;m"
 RED = "\033[0;31m"
 GREEN = "\033[0;32m"
